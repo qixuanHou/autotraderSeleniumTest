@@ -1,0 +1,119 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="sprint31Tests" verbose="1">
+
+    <parameter name="bsAccount" value="http://joncook2:UdMVWkWrFrpBZmCut6J8@hub.browserstack.com/wd/hub"/>
+<!--    <test name="KBBTests">
+        <parameter name="baseUrl" value="http://m.autotrader.com/"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="listingUrl" value="http://m.autotrader.com:2200/cars-for-sale/vehicledetails.xhtml?listingId=405890055"/>
+        <groups>
+            <run>
+                <include name="B-12928"/>
+                <include name="B-12925"/>
+                <include name="B-12931"/>
+                <include name="B-05906"/>
+                <include name="B-12923"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.KBBCPOTests" />
+        </classes>
+    </test>
+
+    <test name="MullinaxTests">
+        <parameter name="baseUrl" value="http://m.autotrader.com/"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="listingUrl" value="http://m.autotrader.com/cars-for-sale/vehicledetails.xhtml?listingId=280365212"/>
+        <groups>
+            <run>
+                <include name="B-06029"/>
+                <include name="B-12999"/>
+                <include name="B-10546"/>
+                <include name="B-12957"/>
+                <include name="B-12997"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.MullinaxOffBrandTests"/>
+        </classes>
+    </test>
+    <test name="eCarOneTests">
+        <parameter name="baseUrl" value="http://qmweb4901.autotrader.com:2200/"/>
+        <parameter name="bsAccount" value="http://joncook2:UdMVWkWrFrpBZmCut6J8@hub.browserstack.com/wd/hub"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="listingUrl" value="http://qmweb4901.autotrader.com:2200/cars-for-sale/vehicledetails.xhtml?listingId=278529291"/>
+        <groups>
+            <run>
+                <include name="B-14237"/>
+                <include name="B-14240"/>
+                <include name="B-14239"/>
+                <include name="B-14238"/>
+                <include name="B-14241"/>
+                <include name="B-14242"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.newfeature.eCarOneTests"/>
+        </classes>
+    </test>-->
+    <test name="CarmaxTests">
+        <parameter name="baseUrl" value="http://qmweb4901.autotrader.com:2200/"/>
+        <parameter name="bsAccount" value="http://joncook2:UdMVWkWrFrpBZmCut6J8@hub.browserstack.com/wd/hub"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="listingUrl" value="http://qmweb4901.autotrader.com:2200/cars-for-sale/vehicledetails.xhtml?listingId=280809947"/>
+        <groups>
+            <run>
+                <include name="CarmaxTests"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.newfeature.CarmaxOffbrandTests"/>
+        </classes>
+    </test>
+
+
+    <test name="AutoNationTests">
+        <parameter name="baseUrl" value="http://qmweb4901.autotrader.com:2200/"/>
+        <parameter name="bsAccount" value="http://joncook2:UdMVWkWrFrpBZmCut6J8@hub.browserstack.com/wd/hub"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="listingUrl" value="http://qmweb4901.autotrader.com:2200/cars-for-sale/vehicledetails.xhtml?listingId=280813373"/>
+        <groups>
+            <run>
+                <include name="AutoNationTests"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.newfeature.AutonationOffbrandTests"/>
+        </classes>
+    </test>
+
+</suite>

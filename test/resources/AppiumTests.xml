@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="mDotTestSuite">
+
+    <test name="MyAtc SavedListings SavedSearches">
+        <parameter name="deviceName" value=""/>
+        <parameter name="udid" value="ZX1D3286W7"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="local" value="appium"/>
+        <parameter name="baseUrl" value="https://m-test1.autotrader.com/"/>
+        <parameter name="bsAccount" value="http://127.0.0.1:4491/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.MyAtcRegression"/>
+        </classes>
+    </test>
+
+    <test name="Tim Regression">
+        <parameter name="deviceName" value=""/>
+        <parameter name="udid" value="05157df5a10d6b2f"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="local" value="appium"/>
+        <parameter name="baseUrl" value="https://m-test1.autotrader.com/"/>
+        <parameter name="bsAccount" value="http://127.0.0.1:4492/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.TimCashOfferRegression"/>
+        </classes>
+    </test>
+
+</suite>

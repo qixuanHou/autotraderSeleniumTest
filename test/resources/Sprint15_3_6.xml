@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="sprint15_3_6Tests" verbose="1" >
+    <test name="VisualUpdates" parallel="false">
+        <parameter name="baseUrl" value="http://qmweb4904.autotrader.com:2200/"/>
+        <parameter name="bsAccount" value="http://joncook2:UdMVWkWrFrpBZmCut6J8@hub.browserstack.com/wd/hub"/>
+        <parameter name="local" value="true"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browser_version" value="44.0"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="7"/>
+        <parameter name="resolution" value="1024x768"/>
+        <groups>
+            <run>
+                <include name="B-13378"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.newfeature.VisualUpdateTests" />
+        </classes>
+    </test>
+
+</suite>

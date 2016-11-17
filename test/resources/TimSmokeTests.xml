@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="TimTestSuites" parallel="tests">
+    <test name="Android">
+        <parameter name="browserName" value="android"/>
+        <parameter name="device" value="Samsung Galaxy S5"/>
+        <parameter name="browser_version" value=""/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="baseUrl" value="https://m-test5.autotrader.com/trade-in/"/>
+        <parameter name="os" value="android"/>
+        <parameter name="os_version" value="4.4"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://josephcox1:f9PXzP7MxQMSEHhJ2i6e@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.smoke.tim_smoke.TimCashOfferTests"/>
+        </classes>
+    </test>
+    <!--<test name="IPhone">-->
+        <!--<parameter name="browser" value="iPhone"/>-->
+        <!--<parameter name="device" value="iPhone 5"/>-->
+        <!--<parameter name="version" value=""/>-->
+        <!--<parameter name="platform" value="MAC"/>-->
+        <!--<parameter name="local" value="false"/>-->
+        <!--<parameter name="baseUrl" value="https://m-test1.autotrader.com/trade-in/"/>-->
+        <!--<parameter name="os" value="Windows"/>-->
+        <!--<parameter name="os_version" value="7"/>-->
+        <!--<parameter name="resolution" value="1024x768"/>-->
+    <!--<parameter name="bsAccount" value="http://josephcox1:f9PXzP7MxQMSEHhJ2i6e@hub.browserstack.com/wd/hub"/>-->
+        <!--<classes>-->
+            <!--<class name="com.autotrader.tim.pages.smoke.MobileTimFunnelBrowserStackCashOfferTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Chrome Browser Stack">-->
+        <!--<parameter name="browser" value="Chrome"/>-->
+        <!--<parameter name="version" value="44.0"/>-->
+        <!--<parameter name="local" value="false"/>-->
+        <!--<parameter name="baseUrl" value="https://m-test1.autotrader.com/trade-in/"/>-->
+        <!--<parameter name="os" value="Windows"/>-->
+        <!--<parameter name="osv" value="7"/>-->
+        <!--<parameter name="res" value="1024x768"/>-->
+        <!--<parameter name="bsAccount" value="http://josephcox1:f9PXzP7MxQMSEHhJ2i6e@hub.browserstack.com/wd/hub"/>-->
+        <!--<classes>-->
+            <!--<class name="com.autotrader.tim.pages.smoke.MobileTimFunnelBrowserStackCashOfferTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite> <!-- Suite -->

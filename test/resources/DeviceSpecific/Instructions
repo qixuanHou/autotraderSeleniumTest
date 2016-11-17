@@ -1,0 +1,36 @@
+
+
+
+---The two xml files in this directory simplify the process of running tests on a certain device via Browserstack. To run the tests, open a command
+prompt window under the project directory and enter the following command
+
+
+   For Android:
+
+     Lollipop:
+
+   mvn test -DsuiteXmlFile=src/test/resources/DeviceSpecific/android.xml -DbaseUrl=http://m-test1.autotrader.com?NOFORESEETEST=true/
+   "-Ddevice=Google Nexus 5" -Dos_version=5
+
+
+     KitKat:
+
+   mvn test -DsuiteXmlFile=src/test/resources/DeviceSpecific/android.xml -DbaseUrl=http://m-test1.autotrader.com?NOFORESEETEST=true/
+   "-Ddevice=Samsung Galaxy S5" -Dos_version=4.4
+
+
+
+
+
+   For iOS:
+
+     iOS 7:
+
+   mvn test -DsuiteXmlFile=src/test/resources/DeviceSpecific/ios.xml -DbaseUrl=http://m-test1.autotrader.com?NOFORESEETEST=true/
+   "-Ddevice=iPhone 5S" -Dos_version=7
+
+
+     iOS 6:
+
+   mvn test -DsuiteXmlFile=src/test/resources/DeviceSpecific/ios.xml -DbaseUrl=http://m-test1.autotrader.com?NOFORESEETEST=true/
+   "-Ddevice=iPhone 5" -Dos_version=6

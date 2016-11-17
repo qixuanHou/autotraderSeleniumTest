@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="mDotTestSuite" parallel="tests">
+
+    <listeners>
+        <listener class-name="com.autotrader.mdot.utilities.DbReporterV3"/>
+    </listeners>
+
+    <test name="SYC Standard Ad Regression">
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.SycStandardAdRegression"/>
+        </classes>
+    </test>
+
+    <test name="TIM Cash Offer Regression">
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.TimCashOfferRegression"/>
+        </classes>
+    </test>
+
+    <test name="MyATC Sign In / Sign Out">
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.smoke.myatc_smoke.SignInSignOutTests"/>
+        </classes>
+    </test>
+
+    <test name="Dealer Regression">
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.DealerRegression"/>
+        </classes>
+    </test>
+
+
+</suite>

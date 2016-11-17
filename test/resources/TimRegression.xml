@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="mDotTestSuite" parallel="tests">
+
+
+    <test name="TIM Cash Offer Regression">
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.TimCashOfferRegression"/>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="mDotTestSuite" parallel="tests">
+
+    <test name = "HttpsTest">
+        <parameter name="browserName" value="iPhone"/>
+        <parameter name="device" value="iPhone 5"/>
+        <parameter name="emulator" value="true"/>
+        <parameter name="browser_version" value=""/>
+        <parameter name="platform" value="MAC"/>
+        <parameter name="local" value="true"/>
+        <parameter name="baseUrl" value="https://m-test1.autotrader.com/sell-your-car/index.xhtml"/>
+        <parameter name="os" value="ios"/>
+        <parameter name="os_version" value="5"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.newfeature.HttpsTests"/>
+        </classes>
+    </test>
+
+</suite>

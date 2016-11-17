@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="mDotTestSuite" parallel="tests">
+
+    <test name="Standard Ad Regression">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.SycStandardAdRegression"/>
+        </classes>
+    </test>
+
+    <test name="TIM Cash Offer Regression">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.TimCashOfferRegression"/>
+        </classes>
+    </test>
+
+    <test name="MyAtc SignIn SignOut">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <groups>
+            <run>
+                <include name = "signInUp_Hamburger"/>
+                <include name = "signInUp_TopRight"/>
+                <include name = "signInUp_Bottom"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.smoke.myatc_smoke.SignInSignOutTests"/>
+        </classes>
+    </test>
+
+    <test name="Dealer Regression">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.DealerRegression"/>
+        </classes>
+    </test>
+
+    <test name="MyAtc Regression">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.MyAtcRegression"/>
+        </classes>
+    </test>
+
+    <test name="Homepage and GNM Regression">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <classes>
+            <class name="com.autotrader.mdot.testsuites.regression.HomepageGnmRegression"/>
+        </classes>
+    </test>
+
+    <test name="Payment Calculator Tests" >
+        <parameter name="browserName" value="Android"/>
+        <parameter name="platform" value="ANDROID"/>
+        <parameter name="local" value="false"/>
+        <parameter name="os" value="os"/>
+        <parameter name="resolution" value="1024x768"/>
+        <parameter name="bsAccount" value="http://matthewwilliamst2:LcBJGtZsNAAvEoaJ3yFj@hub.browserstack.com/wd/hub"/>
+        <groups>
+            <run>
+                <include name = "calc_pay"/>
+                <exclude name = "hamburger_tests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.autotrader.mdot.testsuites.smoke.hamburger_smoke.HamburgerButtonTests"/>
+        </classes>
+    </test>
+
+</suite>
